@@ -1,5 +1,5 @@
 // src/components/QuizBackground/index.js
-//Aqui está colocando a imagem de fundo do quiz e configurando
+// Aqui está colocando a imagem de fundo do quiz e configurando
 import styled from 'styled-components';
 
 const QuizBackground = styled.div`

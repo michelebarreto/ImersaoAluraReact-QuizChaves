@@ -1,13 +1,11 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 // Aqui é os quadrinhos de exibição do Home quiz
 
 const Widget = styled.div`
   margin-top: 24px;
     margin-bottom: 24px;
     border: 1px solid ${({ theme }) => theme.colors.primary};
-    background-color: ${({ theme }) => {
-      return theme.colors.contrastText;
-    }};
+    background-color: ${({ theme }) => theme.colors.contrastText};
     border-radius: 4px;
     overflow: hidden;
 
@@ -29,7 +27,7 @@ const Widget = styled.div`
   }
 
 `;
-//Aqui é as configurações do Header
+// Aqui é as configurações do Header
 Widget.Header = styled.header`
   display: flex;
   justify-content: flex-start;
@@ -41,7 +39,7 @@ Widget.Header = styled.header`
     margin: 0;
   }
 `;
-//Aqui é a configuração do conteúdo dos quadros do Home
+// Aqui é a configuração do conteúdo dos quadros do Home
 Widget.Content = styled.div`
   padding: 24px 32px 32px 32px;
   & > *:first-child {
