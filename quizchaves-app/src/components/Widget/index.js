@@ -9,13 +9,19 @@ const Widget = styled.div`
     border-radius: 4px;
     overflow: hidden;
 
-     h1, h2, h3 {
+    h1,h3 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 0; 
+    
+  }
+  h2 {
     font-size: 16px;
     font-weight: 700;
     line-height: 1;
     margin-bottom: 0;
-    
-    
+    color:#000000;
   }
   p {
     font-size: 14px bold;
@@ -51,6 +57,25 @@ Widget.Content = styled.div`
   ul {
     list-style: none;
     padding: 0;
+  }
+`;
+
+/** aqui é o css dos topicos das perguntas */
+Widget.Topic = styled.a`
+  outline: 0;
+  text-decoration: none;
+  color: ${({ theme }) => theme.colors.contrastText};
+  background-color: ${({ theme }) => `${theme.colors.primary}`};
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  border-radius: ${({ theme }) => theme.borderRadius};
+  transition: .3s;
+  display: block;
+  
+  &:hover,
+  &:focus {
+    opacity: .5;
   }
 `;
 

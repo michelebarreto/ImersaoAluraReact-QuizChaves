@@ -1,25 +1,18 @@
-/* eslint-disable react/jsx-max-props-per-line */
-/* eslint-disable react/jsx-first-prop-new-line */
-/* eslint-disable react/jsx-curly-spacing */
-/* eslint-disable no-unused-vars */
-/* eslint-disable no-undef */
-/* eslint-disable space-before-blocks */
-/* eslint-disable func-names */
-/* eslint-disable react/jsx-indent */
-/* eslint-disable indent */
-/* eslint-disable react/jsx-closing-tag-location */
-/* eslint-disable react/jsx-tag-spacing */
-/* eslint-disable react/react-in-jsx-scope */
+// desabilitando o eslint
+/* eslint-disable */
 import React from 'react';
 import styled from 'styled-components';
 import Head from 'next/head'; // aqui é do next
 import { useRouter } from 'next/router';// aqui é do next
+
 import db from '../db.json';
 import Widget from '../src/components/Widget';
 import QuizLogo from '../src/components/QuizLogo';
 import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
 import QuizBackground from '../src/components/QuizBackground';
+import Input from '../src/components/Input';
+import Button from '../src/components/Button';
 
 // Aqui está colocando a imagem de fundo do quiz e configurando
 // const BackgroundImage = styled.div`
@@ -30,7 +23,7 @@ import QuizBackground from '../src/components/QuizBackground';
 // `;
 
 // Aqui esta inserindo os container da Home do Quiz
-export const QuizContainer = styled.div`
+ const QuizContainer = styled.div`
   width: 100%;
   max-width: 350px;
   padding-top: 45px;
@@ -68,14 +61,17 @@ return (
         } }
           // o router vai enviar os dados para a próxima pagina
         >
-          <input onChange={function (infosDoEvento){
+          <Input
+            name="nomeDoUsuario"
+            onChange={(infosDoEvento) => {
             // Mudança do estado do componente
            setName(infosDoEvento.target.value);
           }} placeholder=" Escreve ai seu nome 🤪 "
+            value={ name }
           />
-          <button type="submit" disabled={name.length === 0}>
-           Jogar {name}
-           </button>
+          <Button type="submit" disabled={name.length === 0}>
+           {`Jogar ${name}`}
+           </Button>
         </form>
         </Widget.Content>
       </Widget>

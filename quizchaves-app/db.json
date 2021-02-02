@@ -1,28 +1,112 @@
 {
   "bg": "https://1.bp.blogspot.com/-YYbqynBBFeM/Xz3VccJfGZI/AAAAAAAAQt8/-HOsB0Ocj3830DxYk5zHX6Ln66eaVDXxgCLcBGAsYHQ/s1600/arte_caneca_vetor_chaves.jpg",
-  "title": "Quiz CSS da Alura",
-  "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
+  "title": "Quiz do Chaves",
+  "description": "Teste os seus conhecimentos sobre o Chaves ",
   "questions": [
     {
-      "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-      "title": "Como fazer um seletor por id via CSS?",
-      "description": "Essa é pra aquecer",
+      "image": "https://media.giphy.com/media/k70EPFWLrCDQcw7BMu/giphy.gif",
+      "title": "Qual é o refresco que o Chaves vendia ?",
+      "description": "Hora mas não se irrite !",
       "answer": 2,
       "alternatives": [
-        ".elemento",
-        "*elemento",
-        "#elemento",
-        "%elemento"
+        "Laranja",
+        "Manga",
+        "Limão, que parece tamarindo, com gosto de groselha"
+        
       ]
     },
     {
-      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-      "title": "Como fazer um background gradiente com css?",
-      "description": "Faz tempo em haha",
+      "image": "https://media.giphy.com/media/6QowlTcbrbqnMPzG5y/giphy.gif",
+      "title": "No episodio, Os gesseiros o que Kiko e Chaves pensou que o gesso era ?",
+      "description": "Isso, isso, isso !",
       "answer": 0,
       "alternatives": [
-         "background: linear-gradient(#e66465, #9198e5);",
-         "background: gradient(#e66465, #9198e5);"
+         "Leite",
+         "Creme",
+         "Suco"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/PF7ap7ZtRpQKdZt1R5/giphy.gif",
+      "title": "Quando o Sr. Barriga chega na vila o que acontece ?",
+      "description": "Pague meu aluguel!",
+      "answer": 1,
+      "alternatives": [
+         "Não acontece nada",
+         "Leva sempre uma pancada",
+         "Todo mundo faz festa"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/nT9vi8r7qNyY4wTpWD/giphy.gif",
+      "title": "De qual cidade veio carteiro Jaiminho ?",
+      "description": "Eu preciso evitar a fadiga !",
+      "answer": 2,
+      "alternatives": [
+         "México",
+         "Rio de Janeiro",
+         "Tangamandápio",
+         "Acapulco"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/S1hByPNreXj2KibcL9/giphy.gif",
+      "title": "Qual era a profissão do pai do Kiko ?",
+      "description": "Você não vai com a minha cara !",
+      "answer": 3,
+      "alternatives": [
+         "Carpinteiro",
+         "Cozinheiro",
+         "Gesseiro",
+         "Marinheiro"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/NsW2SueNuQFVBsJ0oD/giphy.gif",
+      "title": "Qual era o apelido do Professor Girafales ?",
+      "description": "Tá, tá, tá !",
+      "answer": 2,
+      "alternatives": [
+         "Trilho em pé",
+         "Tobogã de salto alto",
+         "Professor linguiça",
+         "Boneco de olinda"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/vzTZff2NyJTOSNshPG/giphy.gif",
+      "title": "De quem é a frase (Não se misture com essa gentalha.!) ?",
+      "description": "Você aceita uma xícara de café ?",
+      "answer": 3,
+      "alternatives": [
+         "Chiquinha",
+         "Sr. Barriga",
+         "Bruxa do 71",
+         "Dona Florinda"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/sieOYF9xIc0e0OadAF/giphy.gif",
+      "title": "De quem é a frase (A vingança nunca é plena, mata a alma e envenena.!) ?",
+      "description": "Essa é fácil !",
+      "answer": 2,
+      "alternatives": [
+         "Kiko",
+         "Sr. Barriga",
+         "Seu Madruga",
+         "Chaves"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/ykDhvD5BSFC00AbOAX/giphy.gif",
+      "title": "Qual a comida favorita do Chaves ?",
+      "description": "Foi sem querer querendo !",
+      "answer": 2,
+      "alternatives": [
+         "Macarrão",
+         "Bolo",
+         "Sanduíche de presunto",
+         "Sorvete"
       ]
     }
   ],
@@ -36,7 +120,9 @@
       "mainBg": "#171B35",
       "contrastText": "#FFFF66",
       "wrong": "#FF5722",
-      "success": "#4CAF50"
+      "success": "#4CAF50",
+      "neutro":"#FFFFFF",
+       "fonttex":"#000"
     },
     "borderRadius": "4px"
   }
