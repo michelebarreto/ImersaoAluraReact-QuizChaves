@@ -41,6 +41,7 @@ Widget.Header = styled.header`
   padding: 18px 32px;
   background-color: ${({ theme }) => theme.colors.primary};
   
+  
   * {
     margin: 0;
   }
@@ -48,15 +49,19 @@ Widget.Header = styled.header`
 // Aqui é a configuração do conteúdo dos quadros do Home
 Widget.Content = styled.div`
   padding: 24px 32px 32px 32px;
-  & > *:first-child {
+  
+    & > *:first-child {
     margin-top: 0;
   }
   & > *:last-child {
     margin-bottom: 0;
+
   }
   ul {
     list-style: none;
     padding: 0;
+    
+    
   }
 `;
 

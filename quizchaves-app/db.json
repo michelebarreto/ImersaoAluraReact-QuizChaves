@@ -16,7 +16,7 @@
       ]
     },
     {
-      "image": "https://media.giphy.com/media/6QowlTcbrbqnMPzG5y/giphy.gif",
+      "image": "https://media.giphy.com/media/xudiyG2UrVdsf3MR6E/giphy.gif",
       "title": "No episodio, Os gesseiros o que Kiko e Chaves pensou que o gesso era ?",
       "description": "Isso, isso, isso !",
       "answer": 0,
@@ -38,8 +38,8 @@
       ]
     },
     {
-      "image": "https://media.giphy.com/media/nT9vi8r7qNyY4wTpWD/giphy.gif",
-      "title": "De qual cidade veio carteiro Jaiminho ?",
+      "image": "https://media.giphy.com/media/9qwegdAEt4aTBzPp05/giphy.gif",
+      "title": "De qual cidade é o carteiro Jaiminho ?",
       "description": "Eu preciso evitar a fadiga !",
       "answer": 2,
       "alternatives": [
@@ -122,7 +122,8 @@
       "wrong": "#FF5722",
       "success": "#4CAF50",
       "neutro":"#FFFFFF",
-       "fonttex":"#000"
+       "fonttex":"#000",
+       "cert":"#009900"
     },
     "borderRadius": "4px"
   }
