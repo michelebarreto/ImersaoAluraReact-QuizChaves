@@ -1,13 +1,15 @@
 /* eslint-disable */
 import React from 'react';
-import db from '../db.json';
-import Widget from '../src/components/Widget';
-import QuizLogo from '../src/components/QuizLogo';
-import QuizBackground from '../src/components/QuizBackground';
-import QuizContainer from '../src/components/QuizContainer';
-import AlternativesForm from '../src/components/AlternativesForm';
-import Button from '../src/components/Button';
+//import db from '/Users/Michele Barreto/Desktop/IMERSAO REACTNEXT JS ALURA/Projeto-Quiz/quizchaves-app/db.json';
+import Widget from '../../Widget';
+import QuizLogo from '../../QuizLogo';
+import QuizBackground from '../../QuizBackground';
+import QuizContainer from '../../QuizContainer';
+import AlternativesForm from '../../AlternativesForm';
+import Button from '../../Button';
+import BackLinkArrow from '../../BackLinkArrow';
 
+//Aqui são as configurações para pegar os dados de API externos, ou seja o quiz de outras pessoas
 
 function ResultWidget({ results }) {
   return (
@@ -15,8 +17,10 @@ function ResultWidget({ results }) {
       <Widget.Header>
         Seu Resultado :
       </Widget.Header>
+      
    {/** Organização para mostrar o placar final */}
       <Widget.Content>
+      
         <p> Você acertou
         {' '}
 
@@ -28,7 +32,8 @@ function ResultWidget({ results }) {
 
        <ul>
        {results.map((result, index)=>(
-       <li key={`result_ ${result}`}>  # 
+       <li key={`result_ ${result}`}>  ✔️ 
+       {' '}
        {index + 1}
        {' '}
         Resultado :
@@ -36,6 +41,7 @@ function ResultWidget({ results }) {
        ? ' Acertou ' 
        : ' Errou '}
        </li>
+       
               
        ))}    
        </ul>
@@ -69,6 +75,7 @@ function QuestionWidget({ question, totalQuestions, questionIndex,onSubmit,addRe
   return(
     <Widget>
     <Widget.Header>
+    <BackLinkArrow href="/" />
     <h3> {`Pergunta ${questionIndex +1} de ${totalQuestions}`}</h3>
     </Widget.Header>
     <img alt="descrição" style={{width:'110%',height:'220px', objectFit:'cover',}}
@@ -130,13 +137,14 @@ LOADING:'LOADING',
 RESULT:'RESULT',
 };
 
-export default function QuizPage(){
+export default function QuizPage({externalQuestions, externalBg}){
   const [screenState, setScreenState] = React.useState(screenStates.LOADING);
   const [results, setResults]= React.useState([]);//essa const é para captair a quantidade de resposta certa e errada
-  const totalQuestions = db.questions.length;
+  const totalQuestions = externalQuestions.length;
   const [currentQuestion, setcurrentQuestion] = React.useState(0);
   const questionIndex = currentQuestion;
-  const question = db.questions[questionIndex];
+  const question = externalQuestions[questionIndex];
+  const bg= externalBg; //variável para pegar o background de API externa
 
   // Somando os resultados
 
@@ -171,7 +179,7 @@ export default function QuizPage(){
   }
 
   return(
-    <QuizBackground backgroundImage={db.bg}>
+    <QuizBackground backgroundImage={bg}>
     <QuizContainer>
     <QuizLogo />
     {/**Essa configuração é para aparecer a pagina carregando antes de começar o jogo */}

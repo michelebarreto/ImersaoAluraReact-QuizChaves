@@ -50,6 +50,7 @@ Widget.Header = styled.header`
 Widget.Content = styled.div`
   padding: 24px 32px 32px 32px;
   
+  
     & > *:first-child {
     margin-top: 0;
   }
@@ -60,6 +61,7 @@ Widget.Content = styled.div`
   ul {
     list-style: none;
     padding: 0;
+    color:#000;
     
     
   }
@@ -71,16 +73,18 @@ Widget.Topic = styled.a`
   text-decoration: none;
   color: ${({ theme }) => theme.colors.contrastText};
   background-color: ${({ theme }) => `${theme.colors.primary}`};
-  padding: 10px 15px;
+  padding: 10px 10px ;
   margin-bottom: 8px;
   cursor: pointer;
   border-radius: ${({ theme }) => theme.borderRadius};
   transition: .3s;
   display: block;
+   
   
   &:hover,
   &:focus {
     opacity: .5;
+    
   }
 `;
 
