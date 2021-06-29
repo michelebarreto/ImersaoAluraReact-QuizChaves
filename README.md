@@ -7,7 +7,7 @@
 * Typescript
 * Nodejs
 * Styled Components
-* ESlint
+* Vercel
 
 
 Um projeto criado com muito amor e dedicação, durante a Imersão React/Nextjs da Alura
