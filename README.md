@@ -1,4 +1,15 @@
 # ImersaoAluraReact-QuizChaves
+
+<h2>🛠 Tecnologias usadas</h2>
+
+* Reactjs
+* Nextjs
+* Typescript
+* Nodejs
+* Styled Components
+* ESlint
+
+
 Um projeto criado com muito amor e dedicação, durante a Imersão React/Nextjs da Alura
 ![](https://github.com/michelebarreto/ImersaoAluraReact-QuizChaves/blob/master/quizchaves-app/Img/homequiz.jpg)
 # Example app with styled-components
